@@ -12,6 +12,7 @@ RUN apt-get update \
        wget rsyslog systemd systemd-cron sudo iproute2 \
        apt-utils \
        ntp tzdata \
+       walinuxagent dbus ufw \
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean \
